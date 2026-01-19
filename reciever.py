@@ -1,8 +1,3 @@
-# A script from Peter Hinch.
-# https://forum.micropython.org/viewtopic.php?p=62674#p62683
-#
-# This script returns the period between pulses and also the pulse duration (mark) and duty ratio (mark/period)
-
 from machine import Pin, PWM
 from rp2 import PIO, StateMachine, asm_pio
 import time
@@ -96,4 +91,5 @@ while True:
         sm1.restart()
         print('exit')
         c = 0
+
         
